@@ -11,4 +11,9 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChustKnife.Application\ChustKnife.Application.csproj" />
+    <ProjectReference Include="..\ChustKnife.Persistence\ChustKnife.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

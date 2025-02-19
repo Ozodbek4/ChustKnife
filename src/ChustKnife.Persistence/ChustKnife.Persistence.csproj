@@ -7,10 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataContexts\" />
-    <Folder Include="Interceptors\" />
-    <Folder Include="EntityConfigurations\" />
-    <Folder Include="Repositories\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChustKnife.Domain\ChustKnife.Domain.csproj" />
   </ItemGroup>
 
 </Project>
