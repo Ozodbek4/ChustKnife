@@ -16,13 +16,13 @@ public interface IRepository<TEntity> where TEntity : IAuditableEntity
         string[]? includes = null,
         bool asNoTracking = true,
         CancellationToken cancellationToken = default);
-    
+
     Task<IEnumerable<TEntity>> SelectAsEnumerableAsync(
         Expression<Func<TEntity, bool>>? expression = null,
         string[]? includes = null,
         bool asNoTracking = true,
         CancellationToken cancellationToken = default);
-    
+
     IQueryable<TEntity> SelectAsQueryable(
         Expression<Func<TEntity, bool>>? expression = null,
         string[]? includes = null,
